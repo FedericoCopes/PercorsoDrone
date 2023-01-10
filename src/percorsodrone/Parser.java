@@ -32,7 +32,12 @@ public class Parser {
     public Parser() {
         posizioni = new ArrayList<Posizione>();
     }
-
+    
+    private final List<Posizione> posizioni;
+    
+    public Parser() {
+        posizioni = new ArrayList<Posizione>();
+    }
     public List<Posizione> parseDocument(String filename) throws ParserConfigurationException, SAXException, IOException {
         DocumentBuilderFactory factory;
         DocumentBuilder builder;
@@ -54,7 +59,6 @@ public class Parser {
         }
         return posizioni;
     }
-
     private Posizione getPosizione(Element element) {
         Posizione posizione;
         double latitudine = Double.parseDouble(getTextValue(element, "latitudine"));
@@ -64,7 +68,6 @@ public class Parser {
         posizione = new Posizione(latitudine, longitudine, altitudine, dataora.getTime());
         return posizione;
     }
-
     // restituisce il valore testuale dell'elemento figlio specificato
     private String getTextValue(Element element, String tag) {
         String value = null;
@@ -75,7 +78,6 @@ public class Parser {
         }
         return value;
     }
-
     // restituisce il valore data-ora dell'elemento figlio specificato
     private Date getDatetimeValue(Element element, String tag) {
         Date datetime;
@@ -151,7 +153,6 @@ public class Parser {
     public static void main(String[] args) {
         List<Posizione> posizioni = null;
         Parser parser = new Parser();
-
         try {
             posizioni = parser.parseDocument(args[0]);
         } catch (ParserConfigurationException | SAXException exception) {
@@ -166,6 +167,6 @@ public class Parser {
         System.out.println("Altitudine massima raggiunta dal drone: "+parser.getAltitudineMinima());
         System.out.println("Altitudine minima raggiunta dal drone: "+parser.getAltitudineMassima());
 
+        }        
     }
-
 }
