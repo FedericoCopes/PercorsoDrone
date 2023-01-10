@@ -48,6 +48,6 @@ public class Posizione {
     
     @Override
     public String toString() {
-        return "Posizione{" + "latitude=" + latitudine + ", longitude=" + longitudine + ", altitudine=" + altitudine + ", data e ora=" + dataOra + '}';
+        return "Posizione: " + "latitude=" + latitudine + ", longitude=" + longitudine + ", altitudine=" + altitudine + ", data e ora=" + dataOra;
     }
 }
