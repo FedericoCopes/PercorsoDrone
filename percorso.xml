@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<percorso>
+    <posizione>
+        <latitudine>43.55</latitudine> 
+        <longitudine>10.3167</longitudine> 
+        <altitudine>100.9</altitudine> 
+        <dataOra>2022-10-21T17:29:59</dataOra> 
+    </posizione> 
+    <posizione> 
+        <latitudine>43.65</latitudine> 
+        <longitudine>10.3333</longitudine> 
+        <altitudine>99.1</altitudine> 
+        <dataOra>2022-10-21T17:39:47</dataOra> 
+    </posizione> 
+    <posizione> 
+        <latitudine>43.70</latitudine> 
+        <longitudine>10.37</longitudine> 
+        <altitudine>101.2</altitudine> 
+        <dataOra>2022-10-21T17:49:07</dataOra> 
+    </posizione> 
+    <posizione> 
+        <latitudine>43.7167</latitudine> 
+        <longitudine>10.4</longitudine> 
+        <altitudine>98.9</altitudine> 
+        <dataOra>2022-10-21T17:59:09</dataOra> 
+    </posizione> 
+</percorso>
