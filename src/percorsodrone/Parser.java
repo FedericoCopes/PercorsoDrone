@@ -32,12 +32,6 @@ public class Parser {
     public Parser() {
         posizioni = new ArrayList<Posizione>();
     }
-    
-    private final List<Posizione> posizioni;
-    
-    public Parser() {
-        posizioni = new ArrayList<Posizione>();
-    }
     public List<Posizione> parseDocument(String filename) throws ParserConfigurationException, SAXException, IOException {
         DocumentBuilderFactory factory;
         DocumentBuilder builder;
@@ -164,9 +158,9 @@ public class Parser {
         System.out.println("Latitudine massima raggiunta dal drone: "+parser.getLatitudineMassima());
         System.out.println("Longitudine minima raggiunta dal drone: "+parser.getLongitudineMinima());
         System.out.println("Longitudine massima raggiunta dal drone: "+parser.getLongitudineMassima());
-        System.out.println("Altitudine massima raggiunta dal drone: "+parser.getAltitudineMinima());
-        System.out.println("Altitudine minima raggiunta dal drone: "+parser.getAltitudineMassima());
+        System.out.println("Altitudine minima raggiunta dal drone: "+parser.getAltitudineMinima());
+        System.out.println("Altitudine massima raggiunta dal drone: "+parser.getAltitudineMassima());
 
         }        
     }
-}
+
