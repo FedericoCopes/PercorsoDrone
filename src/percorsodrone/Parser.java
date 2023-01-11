@@ -154,6 +154,8 @@ public class Parser {
         } catch (IOException exception) {
             System.err.println("Errore apertura file XML/XSD");
         }
+        for(Posizione p : posizioni)
+            System.out.println(p);
         System.out.println("Latitudine minima raggiunta dal drone: "+parser.getLatitudineMinima());
         System.out.println("Latitudine massima raggiunta dal drone: "+parser.getLatitudineMassima());
         System.out.println("Longitudine minima raggiunta dal drone: "+parser.getLongitudineMinima());
